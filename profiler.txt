@@ -1,0 +1,4 @@
+{
+  "go": "https://api-gateway.go88.pro/sw/conf?env=production",
+  "fa": "https://api-gateway.go88.pro/sw/conf?env=fa88"
+}
