@@ -1,4 +1,1 @@
-{
-  "go": "https://api-gateway.go88.pro/sw/conf?env=production",
-  "fa": "https://api-gateway.go88.pro/sw/conf?env=fa88"
-}
+ew0KICAiZ284OCI6ICJodHRwczovL2FwaS1nYXRld2F5LmdvODgucHJvL3N3L2NvbmY/ZW52PXByb2R1Y3Rpb24iLA0KICAiZmE4OCI6ICJodHRwczovL2FwaS1nYXRld2F5LmdvODgucHJvL3N3L2NvbmY/ZW52PWZhODgiDQp9
