@@ -1,16 +1,1 @@
-{
-  "go88": "https://api-gateway.gogwapiraps.net/sw/conf/go88",
-  "go88webcc": "https://api-gateway.gogwapiraps.net/sw/conf/webcc",
-  "go88pre": "https://api-gateway.gogwapiraps.net/sw/conf/go88",
-  "fa88": "https://api-gateway.gogwapiraps.net/sw/conf/fa88",
-  "yo88": "https://api-gateway.gogwapiraps.net/sw/conf/yo88",
-  "vic": "https://api-gateway.gogwapiraps.net/sw/conf/vic",
-  "x8": "https://api-gateway.gogwapiraps.net/sw/conf/x8",
-  "ric": "https://api-gateway.gogwapiraps.net/sw/conf/ric",
-  "top88": "https://api-gateway.gogwapiraps.net/sw/conf/t88",
-  "go": "https://api-gateway.gogwapiraps.net/sw/conf/production",
-  "b52": "https://api-gw.25bp-tank.net/esms/v1/profiler?env=b52",
-  "b5webcc": "https://api-gw.25bp-tank.net/esms/v1/profiler?env=webcc",
-  "rik": "https://gw.apigrow-up.com/esms/v1/profiler?env=rik",
-  "rikwebcc": "https://gw.apigrow-up.com/esms/v1/profiler?env=webcc"
-}
+ewogICJnbzg4IjogImh0dHBzOi8vYXBpLWdhdGV3YXkuZ29nd2FwaXJhcHMuY29tL3N3L2NvbmYvZ284OCIsCiAgImdvODh3ZWJjYyI6ICJodHRwczovL2FwaS1nYXRld2F5LmdvZ3dhcGlyYXBzLmNvbS9zdy9jb25mL3dlYmNjIiwKICAiZ284OHByZSI6ICJodHRwczovL2FwaS1nYXRld2F5LmdvZ3dhcGlyYXBzLmNvbS9zdy9jb25mL2dvODgiLAogICJmYTg4IjogImh0dHBzOi8vYXBpLWdhdGV3YXkuZ29nd2FwaXJhcHMuY29tL3N3L2NvbmYvZmE4OCIsCiAgInlvODgiOiAiaHR0cHM6Ly9hcGktZ2F0ZXdheS5nb2d3YXBpcmFwcy5jb20vc3cvY29uZi95bzg4IiwKICAidmljIjogImh0dHBzOi8vYXBpLWdhdGV3YXkuZ29nd2FwaXJhcHMuY29tL3N3L2NvbmYvdmljIiwKICAieDgiOiAiaHR0cHM6Ly9hcGktZ2F0ZXdheS5nb2d3YXBpcmFwcy5jb20vc3cvY29uZi94OCIsCiAgInJpYyI6ICJodHRwczovL2FwaS1nYXRld2F5LmdvZ3dhcGlyYXBzLmNvbS9zdy9jb25mL3JpYyIsCiAgInRvcDg4IjogImh0dHBzOi8vYXBpLWdhdGV3YXkuZ29nd2FwaXJhcHMuY29tL3N3L2NvbmYvdDg4IiwKICAiZ28iOiAiaHR0cHM6Ly9hcGktZ2F0ZXdheS5nb2d3YXBpcmFwcy5jb20vc3cvY29uZi9wcm9kdWN0aW9uIiwKICAiYjUyIjogImh0dHBzOi8vYXBpLWd3LjI1YnAtdGFuay5uZXQvZXNtcy92MS9wcm9maWxlcj9lbnY9YjUyIiwKICAiYjUyd2ViY2MiOiAiaHR0cHM6Ly9hcGktZ3cuMjVicC10YW5rLm5ldC9lc21zL3YxL3Byb2ZpbGVyP2Vudj13ZWJjYyIsCiAgInJpayI6ICJodHRwczovL2d3LmFwaWdyb3ctdXAuY29tL2VzbXMvdjEvcHJvZmlsZXI/ZW52PXJpayIsCiAgInJpa3dlYmNjIjogImh0dHBzOi8vZ3cuYXBpZ3Jvdy11cC5jb20vZXNtcy92MS9wcm9maWxlcj9lbnY9d2ViY2MiCn0=
