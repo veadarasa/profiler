@@ -152,6 +152,9 @@
           line-height: 24px;
           text-align: center;
           
+          a {
+            color: #FFE49E;
+          }
         }
 
       }
@@ -172,6 +175,16 @@
         scrollbar-width: thin;
         scrollbar-color: rgb(176, 176, 176); /* scrollbar color on the track */
       }
+}
+
+.not-found-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
 }
 
 @media (max-width: 1024px) {
