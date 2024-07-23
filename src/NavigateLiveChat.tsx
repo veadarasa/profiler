@@ -165,8 +165,8 @@ function NavigateLiveChat() {
                 </div>
                 <div className="action-group ">
                   <div className="button-group">
-                      {renderButton("NẠP", brandData.withdrawUrl, "deposit")}
-                      {renderButton("RÚT", brandData.depositUrl, "withdraw")}
+                      {renderButton("NẠP", brandData.depositUrl, "deposit")}
+                      {renderButton("RÚT", brandData.withdrawUrl, "withdraw")}
                       {renderButton("QUÊN MẬT KHẨU", brandData.forgetUrl, "forget")}
                       {renderButton("VẤN ĐỀ KHÁC", brandData.otherUrl, "other")}`
                   </div>
