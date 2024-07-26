@@ -11,6 +11,17 @@
   }
 }
 
+.custom-tooltip .tooltip-inner {
+  background-color: #120b05; /* Set background color */
+  color: #e9c660; /* Set text color (optional) */
+  border: 1px solid #e9c660; /* Optional: add a border */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.custom-tooltip.bs-tooltip-top.tooltip .tooltip-arrow::before {
+  border-top-color: #e9c660; /* For tooltips with top placement */
+}
 .navigate-live-chat {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
