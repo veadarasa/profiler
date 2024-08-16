@@ -113,7 +113,7 @@ function NavigateLiveChat() {
   const getConfig = async () => {
     try {
       const getData = await axios.get(
-        `${URL_ENDPOINT}support/api/v1/config/${brand}?xtoken=${xtoken}`
+        `/support/api/v1/config/${brand}?xtoken=${xtoken}`
       );
       if (getData.status === 200) {
         setBrandData(getData?.data);
