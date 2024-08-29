@@ -39,8 +39,8 @@ const BRAND_DATA:BrandData = {
   4103: {
     brandId: "4103",
     brandName: "HITCLUB",
-    domain: "hitclub.fun",
-    phone: "84.338.35.8888 1.646.357.8777",
+    domain: "hitclub.vin",
+    phone: "+84.338.35.8888 +1.646.357.8777",
     facebook: "https://www.facebook.com/hitclubchinhhang/",
     telegram: "https://t.me/HitClubChinhHang"
   },
@@ -162,7 +162,8 @@ function NavigateLiveChat() {
         const brandIdNumber = Number(brand);
         setBrandData({...getData?.data, ...BRAND_DATA?.[brandIdNumber]});
         const brandId: number = getData.data?.brandId;
-        document.title = BRAND_LIST?.[brandId];
+
+        document.title = BRAND_DATA?.[brandIdNumber]?.brandName;
 
         const iconLink = document.createElement("link");
         iconLink.rel = "icon";
