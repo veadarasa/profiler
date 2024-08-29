@@ -204,7 +204,7 @@ function NavigateLiveChat() {
   const logActionTracking = async (paramTracking: string) => {
     try {
       await axios.post(
-        `${URL_ENDPOINT}support/api/v1/log/${brand}?xtoken=${xtoken}&action=${paramTracking}`
+        `/support/api/v1/log/${brand}?xtoken=${xtoken}&action=${paramTracking}`
       );
     } catch (error) {
       console.log(error);
