@@ -13,7 +13,49 @@
     />
     
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
- 
+
+<script>
+
+function createFavicon(iconUrl) {
+
+  const existingIcons = document.querySelectorAll("link[rel='icon'], link[rel='shortcut icon'], link[rel='apple-touch-icon']");
+  existingIcons.forEach(icon => document.head.removeChild(icon));
+
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.href = iconUrl;
+  favicon.type = "image/png";
+  document.head.appendChild(favicon);
+
+  const shortcutIcon = document.createElement("link");
+  shortcutIcon.rel = "shortcut icon";
+  shortcutIcon.href = iconUrl;
+  shortcutIcon.type = "image/png";
+  document.head.appendChild(shortcutIcon);
+
+  const appleTouchIcon = document.createElement("link");
+  appleTouchIcon.rel = "apple-touch-icon";
+  appleTouchIcon.href = iconUrl;
+  document.head.appendChild(appleTouchIcon);
+}
+
+const currentUrl = window.location.pathname;
+
+// Split the URL path by '/'
+const brandUrl = currentUrl.split("/")[2] ?? null;
+
+if (brandUrl) {
+  sessionStorage.setItem("brand", brandUrl);
+}
+
+const storedBrand = sessionStorage.getItem('brand');
+
+const brand = brandUrl ?? storedBrand;
+
+createFavicon(`./images/${brand}-favicon.png`);
+      // };
+</script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

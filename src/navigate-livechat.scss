@@ -6,13 +6,12 @@
   border-radius: 5px;
   z-index: 999; /* Đảm bảo sub-actions hiển thị trên các phần tử khác (tùy chỉnh cụ thể) */
   img {
-   
     margin-bottom: 24px;
   }
 }
 
 body {
-  background-color: #100903 !important
+  background-color: #100903 !important;
 }
 .custom-tooltip .tooltip-inner {
   background-color: #120b05; /* Set background color */
@@ -26,169 +25,191 @@ body {
   border-top-color: #e9c660; /* For tooltips with top placement */
 }
 .navigate-live-chat {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 
-    &.bg-1 {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('~/public/images/bg_black.svg');
-        background-size: cover;
-        z-index: -1; /* Để đặt phía sau */
-        object-fit: contain;
-        background-position: top;
+  &.bg-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("~/public/images/bg_black.svg");
+    background-size: cover;
+    z-index: -1; /* Để đặt phía sau */
+    object-fit: contain;
+    background-position: top;
+  }
+
+  .bg-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("~/public/images/navigate-bg.svg");
+    background-size: cover;
+    z-index: -2; /* Đặt phía sau background1 */
+    object-fit: contain;
+  }
+
+  .group-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center-content {
+      height: 900px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+
+    .main-logo {
+      width: 170px;
+      padding-top: 32px;
+      min-width: 140px;
+      &.logo4102 {
+        min-width: 140px;
+        margin-left: 30px;
+        padding-top: 0;
       }
-      
-    .bg-2 {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('~/public/images/navigate-bg.svg');
-        background-size: cover;
-        z-index: -2; /* Đặt phía sau background1 */
-        object-fit: contain;
-      }
-      
-    .group-content {
-      height: 100%;
-      display: flex;
+    }
+  }
+
+  .msg {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: #ffe49e;
+    margin: 60px 0;
+  }
+
+  .action-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    .button-group {
+      width: 30%;
+      row-gap: 24px;
+      display: grid;
       justify-content: center;
-      align-items: center;
-      .center-content {
-        height: 900px;
-        overflow-x: hidden;
-        overflow-y: auto;
-      }
-    }
+      button {
+        width: 380px;
+        height: 77px;
+        padding: 18px 0px 24px 0px;
+        gap: 16px;
+        border-radius: 18px;
+        background: #60617029;
+        position: relative;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        background-color: #1a0f00;
+        color: linear-gradient(
+          90deg,
+          #e0aa3e 0%,
+          #f9f295 10%,
+          #e5b94f 19%,
+          #e0aa3e 31%,
+          #f7ef8a 71.84%,
+          #b88a44 100%
+        );
 
-    .logo {
-
-        display: flex;
-        justify-content: center;
-        
-        .main-logo {
-            width: 170px;
-            padding-top: 32px;
-            min-width: 140px;
-            &.logo4102 {
-                min-width: 140px;
-                margin-left: 30px;
-                padding-top:0;
-            }
-        }
-    }
-   
-    .msg {
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 27px;
-        text-align: center;
-        color: #FFE49E;
-        margin: 60px 0;
-    }
-
-    .action-group {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 60px;
-      
-      .button-group {
-        width: 30%;
-        row-gap: 24px;
-        display: grid;
-        justify-content: center;
-        button {
-          width: 380px;
-          height: 77px;
-          padding: 18px 0px 24px 0px;
-          gap: 16px;
-          border-radius: 18px;
-          background: #60617029;
-          position: relative;
-          background-clip: padding-box;
-          border: 2px solid transparent;
-          background-color: #1a0f00;
-          color: linear-gradient(90deg, #E0AA3E 0%, #F9F295 10%, #E5B94F 19%, #E0AA3E 31%, #F7EF8A 71.84%, #B88A44 100%);
-
-          span {
-            background: linear-gradient(90deg, #E0AA3E 0%, #F9F295 10%, #E5B94F 19%, #E0AA3E 31%, #F7EF8A 71.84%, #B88A44 100%);
-            -webkit-background-clip: text; /* Để cho phép áp dụng background vào văn bản */
-            background-clip: text; /* Để cho phép áp dụng background vào văn bản */
-            color: transparent;
-            font-size: 24px;
-            line-height: 29.26px;
-            font-weight: 700;
-          }
-        }
-        button:before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: -1;
-          margin: -2px;
-          background-image:linear-gradient(90deg, #E0AA3E 0%, #F9F295 10%, #E5B94F 19%, #E0AA3E 31%, #F7EF8A 71.84%, #B88A44 100%);
-          ;
-          border-radius: inherit;
-        }
-        
-      }
-    }
-   
-    .sub-action-mb {
-      display: flex;
-      column-gap: 24px;
-      justify-content: center;
-    }
-    .footer {
-      // position: absolute;
-      // bottom: 0;
-      // width: 100%;
-      // margin-bottom: 4%;
-      .content {
-        display: flex;
-        justify-content: center;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        text-align: center;
-        color: #FFE49E;
-        .highlight {
-          font-family: Montserrat;
-          font-size: 16px;
+        span {
+          background: linear-gradient(
+            90deg,
+            #e0aa3e 0%,
+            #f9f295 10%,
+            #e5b94f 19%,
+            #e0aa3e 31%,
+            #f7ef8a 71.84%,
+            #b88a44 100%
+          );
+          -webkit-background-clip: text; /* Để cho phép áp dụng background vào văn bản */
+          background-clip: text; /* Để cho phép áp dụng background vào văn bản */
+          color: transparent;
+          font-size: 24px;
+          line-height: 29.26px;
           font-weight: 700;
-          line-height: 24px;
-          text-align: center;
-          text-transform: uppercase;
-          a {
-            color: #FFE49E;
-          }
         }
-
+      }
+      button:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        margin: -2px;
+        background-image: linear-gradient(
+          90deg,
+          #e0aa3e 0%,
+          #f9f295 10%,
+          #e5b94f 19%,
+          #e0aa3e 31%,
+          #f7ef8a 71.84%,
+          #b88a44 100%
+        );
+        border-radius: inherit;
       }
     }
-        ::-webkit-scrollbar {
-        width: 0px;
-        border-radius: 5px;
+  }
+
+  .sub-action-mb {
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+  }
+  .footer {
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // margin-bottom: 4%;
+    .content {
+      display: flex;
+      justify-content: center;
+      font-family: Montserrat;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;
+      color: #ffe49e;
+      line-height: 1.5;
+      .highlight {
+        font-family: Montserrat;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        a {
+          color: #ffe49e;
+          text-transform: uppercase;
+        }
       }
-      
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: rgb(176, 176, 176);
-        border-radius: 5px; 
-      }
-      
-      /* Track */
-      html {
-        scrollbar-width: thin;
-        scrollbar-color: rgb(176, 176, 176); /* scrollbar color on the track */
-      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(176, 176, 176);
+    border-radius: 5px;
+  }
+
+  /* Track */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(176, 176, 176); /* scrollbar color on the track */
+  }
 }
 
 .not-found-container {
@@ -198,31 +219,30 @@ body {
   align-items: center;
   height: 100%;
   text-align: center;
-
 }
 
 @media (max-width: 1024px) {
-
+  .navigate-live-chat .logo .main-logo {
+    padding-top: 0px;
+  }
   .navigate-live-chat {
-
     .group-content .center-content {
       padding: 24px 24px 40px 24px;
       height: 100%;
     }
     .msg {
-      margin: 34px 0;
+      margin: 16px 0;
     }
     .action-group {
       width: 100%;
       margin-bottom: 0;
       .button-group {
-
         width: 100%;
         button {
-          width: 345px
+          width: 345px;
         }
-      } 
-    } 
+      }
+    }
     .sub-action-mb {
       margin-bottom: 34px;
     }
@@ -230,24 +250,44 @@ body {
     .footer {
       .content {
         font-family: Montserrat;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 700;
-        line-height: 15px;
+        line-height: 18px;
         text-align: center;
 
         .highlight {
           font-family: Montserrat;
-          font-size: 12px;
+          font-size: 14px;
           font-weight: 700;
           line-height: 18px;
           text-align: center;
           text-transform: uppercase;
-          
         }
-
       }
     }
-
   }
+  .footer {
+    margin-top: 16px;
+    .content {
+      font-size: 16px;
+    }
+    .highlight {
+      font-size: 16px;
+    }
+  }
+}
 
+.linkchtext_check {
+  display: inline-flex;
+}
+
+.image_check {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 4px;
+  img {
+    width: 13px;
+    height: auto;
+  }
 }
