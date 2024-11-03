@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "start:dev": "cp .env.dev .env && npm start",
     "start:stg": "cp .env.stg .env && npm start",
     "start:prod": "cp .env.pro .env && npm start",
