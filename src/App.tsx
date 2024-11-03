@@ -1,5 +1,5 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import NavigateLiveChatOne from './NavigateLiveChatOne';
+import NavigateLiveChat from './NavigateLiveChat';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/">
-          <NavigateLiveChatOne />
+          <NavigateLiveChat />
         </Route>
       </Switch>
     </BrowserRouter>

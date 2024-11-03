@@ -24,64 +24,6 @@ type BrandData = {
 
 const isMobile = navigator.userAgent.match(/mobile/i);
 
-const BRAND_DATA: BrandData = {
-  2120: {
-    brandId: "2120",
-    brandName: "X8",
-    domain: "x8.games",
-    phone: "0352.866.866",
-    facebook: "https://www.facebook.com/x8giaitrionline",
-    telegram: "https://t.me/gamebaix8club",
-  },
-  4102: {
-    brandId: "4102",
-    brandName: "GO88.com",
-    domain: "go88.com",
-    phone: "0388.90.8888 0921.888.888",
-    facebook: "https://www.facebook.com/go88chinhhang/",
-    telegram: "https://t.me/Go88ChinhHang",
-  },
-  4103: {
-    brandId: "4103",
-    brandName: "HIT.CLUB",
-    domain: "hitclub.vin",
-    phone: "+84.338.35.8888 +1.646.357.8777",
-    facebook: "https://www.facebook.com/hitclubchinhhang/",
-    telegram: "https://t.me/HitClubChinhHang",
-  },
-  4118: {
-    brandId: "4118",
-    brandName: "Vicclub",
-    domain: "vic2.club",
-    phone: "0377.299.399",
-    facebook: "https://www.facebook.com/viccomeback/",
-    telegram: "https://t.me/victrolai",
-  },
-  4121: {
-    brandId: "4121",
-    brandName: "Yo88",
-    domain: "yo88.tv",
-    phone: "035.929.8888",
-    facebook: "https://www.facebook.com/yo88gamedangcap",
-    telegram: "https://t.me/yo88dangcap",
-  },
-  8116: {
-    brandId: "8116",
-    brandName: "Top88",
-    domain: "top88.vip",
-    phone: "058.393.8888",
-    facebook: "http://fb.com/gamebaidaigiatop88",
-    telegram: "https://t.me/top88gamebaidaigia",
-  },
-  9070: {
-    brandId: "9070",
-    brandName: "Fa88",
-    domain: "fa88.tv",
-    phone: "0393.111.888",
-    facebook: "",
-    telegram: "",
-  },
-};
 
 const extractDomain = (): string => {
   try {
@@ -125,7 +67,65 @@ const xtoken = xtokenUrl ?? storedXToken;
 
 
 function NavigateLiveChatOne() {
-
+  const BRAND_DATA: BrandData = {
+    2120: {
+      brandId: "2120",
+      brandName: "X8",
+      domain: "x8.games",
+      phone: "0352.866.866",
+      facebook: "https://www.facebook.com/x8giaitrionline",
+      telegram: "https://t.me/gamebaix8club",
+    },
+    4102: {
+      brandId: "4102",
+      brandName: "GO88.com",
+      domain: "go88.com",
+      phone: "0388.90.8888 0921.888.888",
+      facebook: "https://www.facebook.com/go88chinhhang/",
+      telegram: "https://t.me/Go88ChinhHang",
+    },
+    4103: {
+      brandId: "4103",
+      brandName: "HIT.CLUB",
+      domain: "hitclub.vin",
+      phone: "+84.338.35.8888 +1.646.357.8777",
+      facebook: "https://www.facebook.com/hitclubchinhhang/",
+      telegram: "https://t.me/HitClubChinhHang",
+    },
+    4118: {
+      brandId: "4118",
+      brandName: "VICCLUB",
+      domain: "vic2.club",
+      phone: "0377.299.399",
+      facebook: "https://www.facebook.com/viccomeback/",
+      telegram: "https://t.me/victrolai",
+    },
+    4121: {
+      brandId: "4121",
+      brandName: "Yo88",
+      domain: "yo88.tv",
+      phone: "035.929.8888",
+      facebook: "https://www.facebook.com/yo88gamedangcap",
+      telegram: "https://t.me/yo88dangcap",
+    },
+    8116: {
+      brandId: "8116",
+      brandName: "Top88",
+      domain: "top88.vip",
+      phone: "058.393.8888",
+      facebook: "http://fb.com/gamebaidaigiatop88",
+      telegram: "https://t.me/top88gamebaidaigia",
+    },
+    9070: {
+      brandId: "9070",
+      brandName: "Fa88",
+      domain: "fa88.tv",
+      phone: "0393.111.888",
+      facebook: "",
+      telegram: "",
+    },
+  };
+  
   const [showTooltip, setShowTooltip] = useState(false);
   const [target, setTarget] = useState(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
