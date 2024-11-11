@@ -78,8 +78,8 @@ function NavigateLiveChat() {
     },
     4102: {
       brandId: "4102",
-      brandName: "GO88.com",
-      domain: "go88.com",
+      brandName: "GO88.ca",
+      domain: "go88.ca",
       phone: "0388.90.8888 0921.888.888",
       facebook: "https://www.facebook.com/go88chinhhang/",
       telegram: "https://t.me/Go88ChinhHang",
