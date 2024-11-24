@@ -87,7 +87,7 @@ function NavigateLiveChat() {
     4103: {
       brandId: "4103",
       brandName: "HIT.CLUB",
-      domain: "hitclub.vin",
+      domain: "HIT.CLUB",
       phone: "+84.338.35.8888 +1.646.357.8777",
       facebook: "https://www.facebook.com/hitclubchinhhang/",
       telegram: "https://t.me/HitClubChinhHang",
@@ -263,11 +263,11 @@ function NavigateLiveChat() {
               <span className="highlight"> 
                 <a href={`http://${extractDomain()}`}>{brandData.domain}</a> 
               </span>{" "} 
-              là tên miền mới nhất của {brandData.brandName} 
+              đẹp, ngắn gọn & dễ nhớ.
             </div> 
           </div> 
           <div className="content"> 
-            <div>Quý khách lưu ý để chơi game an toàn.</div> 
+            <div>Quý khách lưu ý truy cập đúng link Chính Hãng.</div> 
           </div> 
         </div> 
       ); 
