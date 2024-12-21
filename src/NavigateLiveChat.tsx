@@ -232,45 +232,110 @@ function NavigateLiveChat() {
   };
 
   const showFooter = () => {
-    if (extractDomain() && brandData.brandId === "4102") {
-      return (
-        <div className="footer">
-          <div className="content">
-            <div>Hiện nay có rất nhiều trang Giả Mạo.</div>
-          </div>
-          <div className="content">
-            <div>
-              Quý khách vui lòng truy cập đúng Địa Chỉ{" "}
-              <span className="highlight linkchtext_check">
-                <a href={`http://${extractDomain()}`}>{brandData.brandName}</a>
-                <div className="image_check">
-                  <img
-                    src="/images/icon-checks.png"
-                    alt={brandData.brandName}
-                  />{" "}
-                </div>
-              </span>
+    if (extractDomain() && brandData.brandId === "4103") { // con hit
+      let correctDomain103 = extractDomain();
+      if(correctDomain103 === brandData.brandName) { // link chinh hang
+        return (
+          <div className="footer">
+            <div className="content">
+              <div> 
+                <span className="highlight"> 
+                  <a href={`http://${correctDomain103}`}>{correctDomain103}</a> 
+                </span>{" "} 
+                đẹp, ngắn gọn & dễ nhớ.
+              </div> 
+            </div>
+            <div className="content">
+              <div>
+                Quý khách lưu ý truy cập đúng link Chính Hãng.
+              </div>
             </div>
           </div>
-        </div>
-      );
+        );
+      } else { // CH bi chan
+        return (
+          <div className="footer">
+            <div className="content">
+              <div> 
+                <span className="highlight"> 
+                  <a href={`http://${correctDomain103}`}>{correctDomain103}</a> 
+                </span>{" "} 
+                là tên miền mới nhất của HITCLUB.
+              </div> 
+            </div>
+            <div className="content">
+              <div>
+                Quý khách lưu ý để chơi game an toàn.
+              </div>
+            </div>
+          </div>
+        );
+      }
+      
     }
-    if (extractDomain() && brandData.brandId === "4103") { 
-      return ( 
-        <div className="footer"> 
-          <div className="content"> 
-            <div> 
-              <span className="highlight"> 
-                <a href={`http://${extractDomain()}`}>{brandData.domain}</a> 
-              </span>{" "} 
-              đẹp, ngắn gọn & dễ nhớ.
+    if (extractDomain() && brandData.brandId === "4102") {  //con go
+      let correctDomain102 = extractDomain();
+      let notBlockCH = true; // hard code for case domain CH not block
+      if(correctDomain102 === brandData.domain){ // link chinh hang
+        return ( 
+          <div className="footer"> 
+            <div className="content"> 
+              <div> 
+                <span className="highlight linkchtext_check">
+                  <a href={`http://${correctDomain102}`}>{correctDomain102}</a>
+                  <div className="image_check">
+                    <img
+                      src="/images/icon-checks.png"
+                      alt={brandData.brandName}
+                    />{" "}
+                  </div>
+                </span>
+                là tên miền đẹp, ngắn gọn, dễ nhớ.
+              </div> 
+            </div> 
+            <div className="content"> 
+              <div>Không truy cập các link giả mạo khác ⛔️ ⛔️ ⛔</div> 
             </div> 
           </div> 
-          <div className="content"> 
-            <div>Quý khách lưu ý truy cập đúng link Chính Hãng.</div> 
+        ); 
+      } else if(notBlockCH) {
+        return ( 
+          <div className="footer"> 
+            <div className="content"> 
+              <div> 
+                Để kiểm tra tính chính hãng của {" "}
+                <span className="highlight">
+                  <a href={`http://${correctDomain102}`}>{correctDomain102}</a>
+                </span>{", "}
+                Quý khách truy cập 
+                <span className="highlight"> 
+                  <a href={`http://${brandData.domain}`}>{brandData.domain}</a> 
+                </span>.
+              </div> 
+            </div> 
+            <div className="content"> 
+              <div>Không truy cập link giả mạo khác ⛔️ ⛔️ ⛔</div> 
+            </div> 
           </div> 
-        </div> 
-      ); 
+        ); 
+      } else { // CH bi chan
+        return ( 
+          <div className="footer"> 
+            <div className="content"> 
+              <div> 
+                Quý khách vui lòng truy cập tên miền mới {" "}
+                <span className="highlight"> 
+                  <a href={`http://${correctDomain102}`}>{correctDomain102}</a> 
+                </span>{" "} 
+                để chơi game an toàn.
+              </div> 
+            </div> 
+            <div className="content"> 
+              <div>Không truy cập link giả mạo khác ⛔️ ⛔️ ⛔</div> 
+            </div> 
+          </div> 
+        ); 
+      }
     }
     return <></>;
   };
