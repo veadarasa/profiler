@@ -16,6 +16,7 @@ type BrandInfo = {
   phone: string;
   facebook: string;
   telegram: string;
+  turnoffFb?: true;
 };
 
 type BrandData = {
@@ -91,6 +92,7 @@ function NavigateLiveChat() {
       phone: "+84.338.35.8888 +1.646.357.8777",
       facebook: "https://www.facebook.com/hitclubchinhhang/",
       telegram: "https://t.me/HitClubChinhHang",
+      turnoffFb: true
     },
     4118: {
       brandId: "4118",
@@ -107,6 +109,7 @@ function NavigateLiveChat() {
       phone: "035.929.8888",
       facebook: "https://www.facebook.com/yo88gamedangcap",
       telegram: "https://t.me/yo88dangcap",
+      turnoffFb: true
     },
     8116: {
       brandId: "8116",
@@ -372,7 +375,7 @@ function NavigateLiveChat() {
               </Overlay>
             </div>
           )}
-          {brandData?.facebook && (
+          {brandData?.facebook && !brandData?.turnoffFb && (
             <div className="sub-button">
               <img
                 id={brandData.brandId}
@@ -455,7 +458,7 @@ function NavigateLiveChat() {
                       </Overlay>
                     </>
                   )}
-                  {brandData?.facebook && (
+                  {brandData?.facebook && !brandData?.turnoffFb && (
                     <img
                       id={brandData.brandId}
                       src={`/images/fb.svg`}
