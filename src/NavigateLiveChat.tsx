@@ -90,7 +90,7 @@ function NavigateLiveChat() {
       brandName: "HIT.CLUB",
       domain: "HIT.CLUB",
       phone: "+84.338.35.8888 +1.646.357.8777",
-      facebook: "https://www.facebook.com/hitclubchinhhang/",
+      facebook: "https://www.facebook.com/dangcaphitclub/",
       telegram: "https://t.me/HitClubChinhHang",
       turnoffFb: true
     },
@@ -237,13 +237,13 @@ function NavigateLiveChat() {
   const showFooter = () => {
     if (extractDomain() && brandData.brandId === "4103") { // con hit
       let correctDomain103 = extractDomain();
-      if(correctDomain103 === brandData.brandName) { // link chinh hang
+      if(correctDomain103?.toLocaleLowerCase() === brandData.brandName?.toLocaleLowerCase()) { // link chinh hang
         return (
           <div className="footer">
             <div className="content">
               <div> 
                 <span className="highlight"> 
-                  <a href={`http://${correctDomain103}`}>{correctDomain103}</a> 
+                  <a href={`http://${correctDomain103}`}>{brandData.brandName}</a> 
                 </span>{" "} 
                 đẹp, ngắn gọn & dễ nhớ.
               </div> 
@@ -261,7 +261,7 @@ function NavigateLiveChat() {
             <div className="content">
               <div> 
                 <span className="highlight"> 
-                  <a href={`http://${correctDomain103}`}>{correctDomain103}</a> 
+                  <a href={`http://${correctDomain103}`}>{correctDomain103?.toLocaleUpperCase()}</a> 
                 </span>{" "} 
                 là tên miền mới nhất của HITCLUB.
               </div> 
@@ -279,13 +279,13 @@ function NavigateLiveChat() {
     if (extractDomain() && brandData.brandId === "4102") {  //con go
       let correctDomain102 = extractDomain();
       let notBlockCH = true; // hard code for case domain CH not block
-      if(correctDomain102 === brandData.domain){ // link chinh hang
+      if(correctDomain102?.toLocaleLowerCase() === brandData.domain?.toLocaleLowerCase()){ // link chinh hang
         return ( 
           <div className="footer"> 
             <div className="content"> 
               <div> 
                 <span className="highlight linkchtext_check">
-                  <a href={`http://${correctDomain102}`}>{correctDomain102}</a>
+                  <a href={`http://${correctDomain102}`}>{correctDomain102?.toLocaleUpperCase()}</a>
                   <div className="image_check">
                     <img
                       src="/images/icon-checks.png"
@@ -308,11 +308,11 @@ function NavigateLiveChat() {
               <div> 
                 Để kiểm tra tính chính hãng của {" "}
                 <span className="highlight">
-                  <a href={`http://${correctDomain102}`}>{correctDomain102}</a>
+                  <a href={`http://${correctDomain102}`}>{correctDomain102?.toLocaleUpperCase()}</a>
                 </span>{", "}
                 Quý khách truy cập 
                 <span className="highlight"> 
-                  <a href={`http://${brandData.domain}`}>{brandData.domain}</a> 
+                  <a href={`http://${brandData.domain}`}>{brandData.domain?.toLocaleUpperCase()}</a> 
                 </span>.
               </div> 
             </div> 
