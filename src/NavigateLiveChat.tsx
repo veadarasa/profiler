@@ -309,11 +309,11 @@ function NavigateLiveChat() {
                 Để kiểm tra tính chính hãng của {" "}
                 <span className="highlight">
                   <a href={`http://${correctDomain102}`}>{correctDomain102?.toLocaleUpperCase()}</a>
-                </span>{", "}
-                Quý khách truy cập 
+                </span>{" "}
+                Quý khách truy cập {" "}
                 <span className="highlight"> 
                   <a href={`http://${brandData.domain}`}>{brandData.domain?.toLocaleUpperCase()}</a> 
-                </span>.
+                </span>{" "}
               </div> 
             </div> 
             <div className="content"> 
