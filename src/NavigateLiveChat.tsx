@@ -74,7 +74,7 @@ function NavigateLiveChat() {
       brandName: "X8",
       domain: "x8.games",
       phone: "0352.866.866",
-      facebook: "https://www.facebook.com/x8giaitrionline",
+      facebook: "https://www.facebook.com/x8clubgiaitrionline/",
       telegram: "https://t.me/gamebaix8club",
     },
     4102: {
