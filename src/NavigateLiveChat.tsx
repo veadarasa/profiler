@@ -115,7 +115,7 @@ function NavigateLiveChat() {
       brandId: "8116",
       brandName: "Top88",
       domain: "top88.vip",
-      phone: "",
+      phone: "0369.789.789",
       facebook: "http://fb.com/gamebaidaigiatop88",
       telegram: "https://t.me/top88gamebaidaigia",
     },
